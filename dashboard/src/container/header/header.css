@@ -1,0 +1,11 @@
+.header_container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 0;
+    text-align: center;
+}
