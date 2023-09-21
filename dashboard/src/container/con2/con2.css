@@ -2,11 +2,18 @@
     margin: 10px;
 }
 .cat{
-
+    display: flex;
+    flex-direction: row;
 }
 
 .patient_cat{
-    height: 60px;
-    width: 100px;
-    border: 1px solid black;
+    height: 200px;
+    width: 170px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px;
+}
+.patient_cat :hover{
+    box-shadow: 10px 5px 10px gray;
 }
