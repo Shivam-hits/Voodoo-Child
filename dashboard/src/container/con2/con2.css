@@ -14,6 +14,6 @@
     border-radius: 20px;
     margin: 15px;
 }
-.patient_cat :hover{
+.patient_cat:hover{
     box-shadow: 10px 5px 10px gray;
 }
