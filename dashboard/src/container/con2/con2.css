@@ -9,11 +9,27 @@
 .patient_cat{
     height: 200px;
     width: 180px;
-    border: 2px solid black;
+    border: 2px ;
     text-align: center;
     border-radius: 20px;
     margin: 15px;
 }
 .patient_cat:hover{
-    box-shadow: 10px 5px 10px gray;
+    box-shadow: 5px 2.5px 5px gray;
 }
+.recent_patients{
+    margin: 10px 0 10px 0;
+}
+.graph{
+    width: 650px;
+    /* margin: 35px auto; */
+}
+.counter{
+    width: 690px;
+    /* margin: 35px auto; */
+}
+.repre{
+    display: flex;
+    flex-direction: row;
+}
+  
