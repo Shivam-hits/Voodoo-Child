@@ -21,7 +21,7 @@
     margin: 10px 0 10px 0;
 }
 .graph{
-    width: 650px;
+    width: 500px;
     /* margin: 35px auto; */
 }
 .counter{
@@ -32,4 +32,6 @@
     display: flex;
     flex-direction: row;
 }
-  
+.apexcharts-legend-text{
+    color: white!important ;
+}

@@ -10,46 +10,86 @@ import elon from "../../images/nobg_img/Group25.svg"
 
 
 function Con2() {
-const [state, setstate] = useState( {
+const [state, setstate] = useState({
           
   series: [{
-    data: [44, 55, 41, 64, 22, 43, 21]
+    name: 'ADHD',
+    data: [44, 55, 41, 37, 22, 43, 21]
   }, {
-    data: [53, 32, 33, 52, 13, 44, 32]
-  },],
+    name: 'Striking Calf',
+    data: [53, 32, 33, 52, 13, 43, 32]
+  }, {
+    name: 'Tank Picture',
+    data: [12, 17, 11, 9, 15, 11, 20]
+  }, {
+    name: 'Bucket Slope',
+    data: [9, 7, 5, 8, 6, 9, 4]
+  }, {
+    name: 'Reborn Kid',
+    data: [25, 12, 19, 32, 25, 24, 10]
+  }],
   options: {
     chart: {
       type: 'bar',
-      height: 430
+      height: 350,
+      stacked: true,
     },
     plotOptions: {
       bar: {
         horizontal: true,
         dataLabels: {
-          position: 'top',
-        },
-      }
-    },
-    dataLabels: {
-      enabled: true,
-      offsetX: -6,
-      style: {
-        fontSize: '12px',
-        colors: ['white']
-      }
+          total: {
+            enabled: true,
+            offsetX: 0,
+            style: {
+              fontSize: '13px',
+              fontWeight: 700
+            }
+          }
+        }
+      },
     },
     stroke: {
-      show: true,
       width: 1,
       colors: ['#fff']
     },
-    tooltip: {
-      shared: true,
-      intersect: false
+    title: {
+      text: 'Mental state'
     },
     xaxis: {
-      categories: [21, 22, 23, 24, 25, 26, 27],
+      categories: [18, 19, 20, 21, 22, 23, 24],
+      labels: {
+        style:{
+          colors:["white"],
+        },
+        
+      }
     },
+    yaxis: {
+      title: {
+        text: undefined,
+      },
+      labels:{
+        style:{
+          colors:["white"],
+        },
+      },
+    },
+    tooltip: {
+      y: {
+        formatter: function (val) {
+          return val
+        }
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+    legend: {
+      position: 'top',
+      horizontalAlign: 'left',
+      offsetX: 10
+    }
   },
 
 
@@ -129,15 +169,12 @@ const [state2, setState2] = useState({
         </div>
 
         <div className="graph">
-          <div className='row'>
-            <div className='column'>
-            <Chart 
-              options={state.options} 
-              series={state.series} 
-              type="bar" 
-              height={350} />
-            </div>
-          </div>
+          <Chart 
+            options={state.options} 
+            series={state.series} 
+            type="bar" 
+            height={300} 
+          />
         </div>
 
     
@@ -168,11 +205,6 @@ const [state2, setState2] = useState({
         <div className='patient_cat'>
           <h3>PARKINSON’s</h3>
           <img src={park} alt="" />
-        </div>
-
-        <div className='patient_cat'>
-          <h3>TBI</h3>
-          <img src={tbi} alt="" />
         </div>
 
         <div className='patient_cat'>
