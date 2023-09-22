@@ -16,16 +16,16 @@ const [state, setstate] = useState({
     name: 'ADHD',
     data: [44, 55, 41, 37, 22, 43, 21]
   }, {
-    name: 'Striking Calf',
+    name: 'ALZHEIMERS',
     data: [53, 32, 33, 52, 13, 43, 32]
   }, {
-    name: 'Tank Picture',
+    name: 'DEMENTIA',
     data: [12, 17, 11, 9, 15, 11, 20]
   }, {
-    name: 'Bucket Slope',
+    name: 'EPILEPSY',
     data: [9, 7, 5, 8, 6, 9, 4]
   }, {
-    name: 'Reborn Kid',
+    name: 'TBI',
     data: [25, 12, 19, 32, 25, 24, 10]
   }],
   options: {
@@ -177,8 +177,6 @@ const [state2, setState2] = useState({
           />
         </div>
 
-    
-
         <div className="">
 
         </div>
@@ -218,6 +216,7 @@ const [state2, setState2] = useState({
         </div>
       </div>
 
+      <div className='patient_container'>
       <div className="">
         <div className="recent_patients">
           <img src={elon} alt="" srcset="" />
@@ -232,7 +231,27 @@ const [state2, setState2] = useState({
           <img src={elon} alt="" srcset="" />
         </div>
       </div>
+      <div className='sh_app'>
+        <p>calandar kjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+      </div>
 
+      <div className='patient_activity'>
+        <div>
+          <img src={elon} alt="" />
+        </div>
+        <div>
+          <img src={elon} alt="" />
+        </div>
+        <div>
+          <img src={elon} alt="" />
+        </div>
+        <div>
+          <img src={elon} alt="" />
+        </div>
+      </div>
+      
+
+      </div>
     </div>
   )
 }

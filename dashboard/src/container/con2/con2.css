@@ -18,7 +18,7 @@
     box-shadow: 5px 2.5px 5px gray;
 }
 .recent_patients{
-    margin: 10px 0 10px 0;
+    /* margin: 10px 0 10px 0; */
 }
 .graph{
     width: 500px;
@@ -34,4 +34,9 @@
 }
 .apexcharts-legend-text{
     color: white!important ;
+}
+.patient_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
