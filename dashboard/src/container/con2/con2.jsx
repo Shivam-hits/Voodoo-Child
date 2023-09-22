@@ -7,9 +7,15 @@ import deme from "../../images/nobg_img/dementia.png"
 import park from "../../images/nobg_img/parkinsons-disease.png"
 import tbi from "../../images/nobg_img/TBI.png"
 import elon from "../../images/nobg_img/Group25.svg"
-
+import {CalendarComponent} from '@syncfusion/ej2-react-calendars';
 
 function Con2() {
+
+  const dateValue: Date = new Date(new Date().getFullYear(), new Date().getMonth(), 10);
+  const minDate: Date = new Date(new Date().getFullYear(), new Date().getMonth(), 6);
+  const maxDate: Date = new Date(new Date().getFullYear(), new Date().getMonth(), 25);
+
+
 const [state, setstate] = useState({
           
   series: [{
@@ -177,44 +183,45 @@ const [state2, setState2] = useState({
           />
         </div>
 
-        <div className="">
-
-        </div>
 
       </div>
       {/* patients catogaries */}
-      <div className="cat">
-        <div className='patient_cat'>
-          <h3>ADHD</h3>
-          <img src={Adhd} alt="" />
-        </div>
+      <div className="">
+        <p style={{padding:"0",margin:"0",fontFamily:"Roboto"}}>Patients catogaries</p>
+        <div className="cat" style={{padding:"0",margin:"0"}}>
+          <div className='patient_cat'>
+            <h3>ADHD</h3>
+            <img src={Adhd} alt="" />
+          </div>
 
 
-        <div className='patient_cat'>
-          <h3>ALZHEIMERS</h3>
-          <img src={Alzi} alt="" />
-        </div>
+          <div className='patient_cat'>
+            <h3>ALZHEIMERS</h3>
+            <img src={Alzi} alt="" />
+          </div>
 
-        <div className='patient_cat'>
-          <h3>DEMENTIA</h3>
-          <img src={deme} alt="" />
-        </div>
+          <div className='patient_cat'>
+            <h3>DEMENTIA</h3>
+            <img src={deme} alt="" />
+          </div>
 
-        <div className='patient_cat'>
-          <h3>PARKINSON’s</h3>
-          <img src={park} alt="" />
-        </div>
+          <div className='patient_cat'>
+            <h3>PARKINSON’s</h3>
+            <img src={park} alt="" />
+          </div>
 
-        <div className='patient_cat'>
-          <h3>TBI</h3>
-          <img src={tbi} alt="" />
-        </div>
+          <div className='patient_cat'>
+            <h3>TBI</h3>
+            <img src={tbi} alt="" />
+          </div>
 
-        <div className='patient_cat'>
-          <h3>EPILEPSY</h3>
-          <img src={tbi} alt="" />
+          <div className='patient_cat'>
+            <h3>EPILEPSY</h3>
+            <img src={tbi} alt="" />
+          </div>
         </div>
       </div>
+      
 
       <div className='patient_container'>
       <div className="">
@@ -232,7 +239,8 @@ const [state2, setState2] = useState({
         </div>
       </div>
       <div className='sh_app'>
-        <p>calandar kjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+      <CalendarComponent value={dateValue} min={minDate} max={maxDate}
+        isMultiSelection={true}></CalendarComponent>
       </div>
 
       <div className='patient_activity'>
